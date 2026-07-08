@@ -13,7 +13,7 @@
 
 font-family:ATMOVE;
 
-src:url("assets/fonts/AT Move MMM W03 0.ttf");
+src:url("assets/font/2.ttf");
 
 }
 
@@ -23,7 +23,7 @@ src:url("assets/fonts/AT Move MMM W03 0.ttf");
 
 font-family:WEBER;
 
-src:url("assets/fonts/ITC WeberHand W01 Bold.ttf");
+src:url("assets/font/1.ttf");
 
 }
 
@@ -33,7 +33,7 @@ src:url("assets/fonts/ITC WeberHand W01 Bold.ttf");
 
 font-family:ROUNDED;
 
-src:url("assets/fonts/Arial Rounded MT Bold.ttf");
+src:url("assets/font/3.TTF");
 
 }
 
@@ -68,7 +68,7 @@ scroll-behavior:smooth;
 
 body{
 
-background:#161616;
+background:#090909;
 
 color:#e6e6e6;
 
@@ -386,7 +386,7 @@ text-align:center;
 .logo-principal{
 
 
-width:420px;
+width:960px;
 
 
 max-width:80%;
@@ -403,17 +403,7 @@ flotar 5s infinite;
 
 
 
-@keyframes flotar{
 
-
-50%{
-
-transform:translateY(-20px);
-
-}
-
-
-}
 
 
 
@@ -428,7 +418,7 @@ font-family:WEBER;
 font-size:28px;
 
 
-color:#e63210;
+color:#e6e6e6;
 
 
 margin:30px;
@@ -1284,79 +1274,181 @@ margin:25px auto;
 }
 
 
-
-
-
-
-
-/* ===============================
-   FOOTER
-================================ */
-
+/*=====================================================
+FOOTER
+=====================================================*/
 
 footer{
 
-
-position:fixed;
-
-
-bottom:0;
-
-
-left:0;
-
-
 width:100%;
 
+background:#111111;
 
-height:70px;
+border-top:2px solid #e63210;
 
-
-background:#161616;
-
-
-border-top:
-
-1px solid #e63210;
-
+padding:25px 6%;
 
 display:flex;
 
+justify-content:space-between;
 
 align-items:center;
 
+flex-wrap:wrap;
 
-justify-content:space-around;
+gap:25px;
 
-
-z-index:2000;
-
-
-}
-
-
-
-footer img{
-
-
-width:45px;
-
+margin-top:70px;
 
 }
 
 
+/*-----------------------
+Redes sociales
+-----------------------*/
 
-footer a{
+.footer-redes{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+flex:1;
+
+}
 
 
-color:#e63210;
+.footer-redes a{
 
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:46px;
+
+height:46px;
+
+border:1px solid #e63210;
+
+border-radius:50%;
+
+transition:.35s;
 
 text-decoration:none;
 
+}
 
-margin:10px;
 
+.footer-redes img{
+
+width:22px;
+
+height:22px;
+
+object-fit:contain;
+
+}
+
+
+.footer-redes a:hover{
+
+background:#e63210;
+
+transform:translateY(-4px);
+
+}
+
+
+
+/*-----------------------
+Centro
+-----------------------*/
+
+.footer-copy{
+
+flex:1;
+
+text-align:center;
+
+font-size:15px;
+
+color:#e6e6e6;
+
+}
+
+
+
+/*-----------------------
+Logo
+-----------------------*/
+
+.footer-logo{
+
+flex:1;
+
+display:flex;
+
+justify-content:flex-end;
+
+}
+
+
+.footer-logo img{
+
+width:80px;
+
+height:auto;
+
+transition:.4s;
+
+}
+
+
+.footer-logo img:hover{
+
+transform:scale(1.08);
+
+}
+
+
+
+/*========================
+RESPONSIVE
+========================*/
+
+@media(max-width:850px){
+
+footer{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:35px 20px;
+
+}
+
+.footer-redes{
+
+justify-content:center;
+
+}
+
+.footer-logo{
+
+justify-content:center;
+
+}
+
+.footer-copy{
+
+order:2;
+
+}
 
 }
 
