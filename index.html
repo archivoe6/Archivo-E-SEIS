@@ -32,7 +32,8 @@
 <nav>
 
 <button onclick="mostrarSeccion('informacion')">
-Archivo
+Información
+
 </button>
 
 
@@ -102,7 +103,7 @@ Música | Arte | Cultura | Filosofía | Experimental
 
 
 
-<button onclick="mostrarSeccion('informacion')">
+<button onclick="mostrarSeccion('revista')">
 
 Explorar Archivo
 
@@ -580,86 +581,57 @@ Políticas de Privacidad
 <!-- ================= SUSCRIPCIÓN ================= -->
 
 
-<section id="suscripcion" class="seccion">
+<!-- ================= SUSCRIPCIÓN ================= -->
 
+<section id="suscripcion" class="seccion">
 
 <div class="contenedor">
 
+<h1>SUSCRIPCIÓN</h1>
 
-<h1>
-Suscripción
-</h1>
-
-
-<div class="bloque-editorial">
-
-
-<p>
+<p class="intro">
 
 Recibe la revista mensualmente y no te pierdas ninguna edición.
 
 </p>
 
+<p class="intro">
 
-<p>
+Únete a la comunidad de lectores de Archivo E-SEIS y disfruta de contenido exclusivo, artículos completos, análisis en profundidad y acceso prioritario a nuevas publicaciones.
 
-Únete a nuestra comunidad de lectores y disfruta de contenido exclusivo,
-análisis en profundidad y nuevas exploraciones dentro de la cultura
-independiente.
+</p>
+
+<p class="intro">
+
+Con tu suscripción apoyas un proyecto editorial independiente dedicado a la documentación y preservación de la cultura, la música y las artes visuales de Quito.
 
 </p>
 
 
-<p>
 
-Con tu suscripción apoyas el periodismo cultural independiente
-y la documentación de la memoria artística de Quito.
+<!-- PLAN -->
 
-</p>
+<div class="plan-principal">
 
+<h2>Método de pago</h2>
 
-</div>
+<div class="precio">
 
+<h3>Ecuador</h3>
 
+<h1>$10 USD</h1>
 
+<p>Transferencia bancaria</p>
 
-
-<h2>
-Elige tu método de acceso
-</h2>
-
-
-
-<div class="planes-suscripcion">
-
-
-
-<div class="plan">
-
-
-<h3>
-Ecuador
-</h3>
-
-
-<h2>
-Transferencia bancaria
-</h2>
-
-
-<p>
-
-Acceso a revista completa
-
-</p>
-
+<p>Pago por edición</p>
 
 <button onclick="abrirWhatsapp()">
 
-Suscribirse
+Realizar transferencia
 
 </button>
 
+</div>
 
 </div>
 
@@ -667,134 +639,51 @@ Suscribirse
 
 
 
+<h2 class="titulo-formulario">
 
-<div class="plan">
-
-
-<h3>
-Latam
-</h3>
-
-
-<h2>
-USD
-</h2>
-
-
-<p>
-
-Suscripción mensual
-
-</p>
-
-
-<button onclick="abrirWhatsapp()">
-
-Suscribirse
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-<div class="plan">
-
-
-<h3>
-Europa
-</h3>
-
-
-<h2>
-EUR
-</h2>
-
-
-<p>
-
-Suscripción mensual
-
-</p>
-
-
-<button onclick="abrirWhatsapp()">
-
-Suscribirse
-
-</button>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<h2>
 Formulario de suscripción
+
 </h2>
-
-
 
 <form class="formulario">
 
-
-<input type="text"
+<input
+type="text"
 placeholder="Nombre completo"
 required>
 
-
-
-<input type="email"
+<input
+type="email"
 placeholder="Correo electrónico"
 required>
 
-
-
-
+<div class="checks">
 
 <label>
 
 <input type="checkbox">
 
-Recibir noticias y novedades de Archivo E-SEIS
+Quiero recibir únicamente noticias y novedades de Archivo E-SEIS.
 
 </label>
-
-
 
 <label>
 
 <input type="checkbox">
 
-Acceso a revista completa mediante transferencia
+Quiero acceder a la revista completa realizando la transferencia.
 
 </label>
-
-
 
 <label>
 
 <input type="checkbox">
 
-Deseo ambas opciones
+Deseo ambas opciones.
 
 </label>
 
-
-
+</div>
 
 <button type="submit">
 
@@ -802,85 +691,95 @@ Enviar solicitud
 
 </button>
 
-
-
 </form>
 
 
 
 
 
-
-
-
-
 <h2>
-¿Por qué unirte a Archivo E-SEIS?
+
+¿Por qué suscribirte?
+
 </h2>
-
-
-
 
 <div class="beneficios">
 
 
-<div>
 
+<div class="beneficio">
 
-<h3>
-Newsletter
-</h3>
+<img src="assets/icons/newsletter.png">
 
-
-<p>
-
-Recibe publicaciones,
-novedades y contenido exclusivo.
-
-</p>
-
-
-</div>
-
-
-
-
-<div>
-
-
-<h3>
-Archivo completo
-</h3>
-
+<h3>Newsletter mensual</h3>
 
 <p>
 
-Acceso a ediciones digitales
-y publicaciones especiales.
+Recibe todas las ediciones,
+contenido exclusivo y novedades
+directamente en tu correo.
 
 </p>
-
 
 </div>
 
 
 
 
-<div>
 
+<div class="beneficio">
 
-<h3>
-Comunidad
-</h3>
+<img src="assets/icons/archive.png">
 
+<h3>Acceso exclusivo</h3>
 
 <p>
 
-Forma parte de una comunidad
-que conserva la cultura independiente.
+Obtén acceso a artículos completos,
+ediciones especiales y material
+editorial exclusivo.
 
 </p>
 
+</div>
+
+
+
+
+
+<div class="beneficio">
+
+<img src="assets/icons/revista.png">
+
+<h3>Revista completa</h3>
+
+<p>
+
+Al realizar la transferencia recibirás
+la contraseña para desbloquear la revista
+digital completa.
+
+</p>
+
+</div>
+
+
+
+
+
+<div class="beneficio">
+
+<img src="assets/icons/cultura.png">
+
+<h3>Apoyas la cultura</h3>
+
+<p>
+
+Con tu aporte contribuyes al desarrollo
+de un archivo independiente dedicado
+a conservar la memoria cultural de Quito.
+
+</p>
 
 </div>
 
@@ -888,17 +787,9 @@ que conserva la cultura independiente.
 
 </div>
 
-
-
-
-
 </div>
-
 
 </section>
-
-
-
 
 
 
@@ -1037,121 +928,69 @@ de una generación.
 <!-- ================= REVISTA ================= -->
 
 
+<!--====================================================
+REVISTA
+=====================================================-->
+
 <section id="revista" class="seccion">
 
+<div class="contenedor revista-container">
 
-<div class="contenedor">
+<h1>REVISTAS</h1>
 
-
-<h1>
-Revistas
-</h1>
-
-
-
-<div class="bloque-editorial">
-
-
-<p>
+<p class="revista-texto">
 
 Explora nuestra colección completa.
 
 </p>
 
+<p class="revista-texto">
 
-<p>
-
-Cada edición de Archivo E-SEIS ofrece una mirada
-única a la cultura contemporánea mediante artículos,
-entrevistas, análisis y registros visuales.
+Cada edición de Archivo E-SEIS ofrece una mirada única a la cultura contemporánea mediante artículos, entrevistas, fotografía, música, artes visuales y pensamiento crítico.
 
 </p>
 
+<h2>TODAS LAS EDICIONES</h2>
 
-</div>
+<div class="revista-card">
 
-
-
-
-
-<h2>
-Todas las ediciones
-</h2>
-
-
-
-<p>
-
-Actualmente disponible:
-
-</p>
-
-
-
-
-<div class="revista-contenedor">
-
-
-
-<div class="revista-flip"
-onclick="abrirVistaPrevia()">
-
-
+<div class="revista-flip" onclick="abrirVistaPrevia()">
 
 <div class="revista-inner">
 
+<div class="portada">
 
-
-<img 
-class="portada"
-src="assets/img/revista0-portada.jpg">
-
-
-
-<img 
-class="contraportada"
-src="assets/img/revista0-contraportada.jpg">
-
-
+<img src="assets/img/p.png" alt="Edición 0">
 
 </div>
 
+<div class="contraportada">
+
+<img src="assets/img/c.png" alt="Contraportada">
 
 </div>
 
+</div>
 
 </div>
 
-
-
-
-
-
-<h2>
-Edición N.º 0
-</h2>
-
-
+<h3>EDICIÓN N.º 0</h3>
 
 <p>
 
-Primera edición experimental
-de Archivo E-SEIS.
+Primera edición de Archivo E-SEIS.
 
 </p>
 
-
-
-
 <button onclick="abrirVistaPrevia()">
 
-Vista previa Flipbook
+Vista previa
 
 </button>
 
+</div>
 
-
-
+<div class="contactar-edicion">
 
 <p>
 
@@ -1159,23 +998,17 @@ Vista previa Flipbook
 
 </p>
 
-
 <button onclick="abrirWhatsapp()">
 
-Contactar
+CONTACTAR
 
 </button>
 
-
-
+</div>
 
 </div>
 
-
 </section>
-
-
-
 
 
 
@@ -1202,7 +1035,7 @@ Archivo E-SEIS Edición Física
 
 <img 
 class="revista-fisica"
-src="assets/img/revista-fisica.jpg">
+src="assets/img/p.png">
 
 
 
